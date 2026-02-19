@@ -7,8 +7,9 @@ I was running on gitbash on visual studio
 after switching to WSL (get it on Extensions)  
 it worked without problem
 
-If needing to work file on C, just change command to gcc
-and file to .c instead of .cpp
+If needing to work file on C, change command to gcc  
+and file to .c instead of .cpp and also change import  
+ex. iostream (C++) and Stdio.h(c)/cstdio(C++)
 
 ### Structure
 
