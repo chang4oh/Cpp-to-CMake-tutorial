@@ -15,7 +15,7 @@ project/
 
 ## Code
 
-Compiling and linking separately is better for large projects
+Compiling and linking separately is better for large projects  
 for incremental build, modularity, code organization
 
 ```
@@ -29,3 +29,7 @@ g++ build/main.o build/math_utils.o -o build/program
 add: 8
 multiply: 15
 ```
+
+**Note**:  
+If you see red line on multiple lines on multiple lines of code relating to  
+import header and its functions that is not to worry about
