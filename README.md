@@ -13,8 +13,8 @@ CMakeLists.txt  →  CMake  →  Makefile / build.ninja
 ```
 
 Make/Ninja is a tool that automates calling gcc compiler and link-executable  
-CMake is system generator, build system builder, meta build system  
-Make/Ninja is generator, build system,
+CMake is build system generator (generates build file)
+Make/Ninja is build system (reads build file to compile and link executable)
 
 ## Terms
 
