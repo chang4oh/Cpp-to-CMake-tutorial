@@ -1,3 +1,5 @@
+## WSL TERMINAL
+
 ```
 g++ main.cpp math_utils.cpp -o main
 

@@ -3,3 +3,6 @@
 .vscode/settings.json
 gcc/main
 g++/main
+g++ with location and libraries/build/main.o
+g++ with location and libraries/build/math_utils.o
+g++ with location and libraries/build/program

@@ -3,7 +3,7 @@
 When compiling and linking to an executable  
 I ran into the trouble on not getting any executable  
 which the linking part failed  
-I was running on gitbash on visual studio  
+I was running on gitbash on visual studio code
 after switching to WSL (get it on Extensions)  
 it worked without problem
 
@@ -15,7 +15,7 @@ ex. iostream (C++) and Stdio.h(c)/cstdio(C++)
 
 {repository}/g++/ main, main.c, README.md
 
-### On WSL
+### WSL TERMINAL
 
 ```
 g++ main.c -o main
