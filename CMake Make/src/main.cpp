@@ -7,6 +7,6 @@ int main() {
   int b = 3;
 
   cout << "add: " << add(a,b) << endl << "multiply: "  <<multiply(a, b) << endl;
-
+  cout << "End of file" << endl;
   return 0;
 }

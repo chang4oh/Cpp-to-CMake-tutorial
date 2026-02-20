@@ -1,7 +1,7 @@
 # Cpp to CMake tutorial
 
-Author: Chang Oh
-Start Date: 2/19/26
+Author: Chang Oh  
+Start Date: 2/19/26  
 Objective: To to learn and apply GCC, CMake, Make, Ninja
 
 ## Overview
