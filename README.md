@@ -1,7 +1,7 @@
 # GCC to CMake tutorial
 
-Author: Chang Oh
-Start Date: 2/19/26
+Author: Chang Oh  
+Start Date: 2/19/26  
 Objective: To to learn and apply GCC, CMake, Make, Ninja
 
 ## Overview
@@ -17,8 +17,9 @@ CMakeLists.txt  →  CMake  →  Makefile / build.ninja
 ```
 
 Make/Ninja is a tool that automates calling gcc compiler and link-executable  
-CMake is build system generator (generates build file)
+CMake is build system generator (generates build file)  
 Make/Ninja is build system (reads build file to compile and link executable)
+I am using GCC 13.3.0 uses the C++17 standard, CMake 3.27.8, VSCode
 
 ## Terms
 

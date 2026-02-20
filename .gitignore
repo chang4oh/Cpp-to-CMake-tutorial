@@ -6,3 +6,4 @@ g++/main
 g++ with location and libraries/build/main.o
 g++ with location and libraries/build/math_utils.o
 g++ with location and libraries/build/program
+myCMake/build/
