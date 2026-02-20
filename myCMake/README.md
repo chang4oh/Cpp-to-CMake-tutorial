@@ -28,32 +28,62 @@ project/
 
 1. create CMakeLists.txt on a root folder
 
+Minimum version of CMake required
+
 ```
-cmake_minimum_required # Minimum version of CMake required.
-
-project(MyProject) # Names your project.
-
-set(CMAKE_CXX_STANDARD 17) # Tells CMake to use C++17.
-
-include_directories(include) # Same idea as: g++ -I include
-
-add_executable # This replaces: g++ main.cpp math_utils.cpp -o program
+cmake_minimum_required(VERSION 3.16)
 ```
 
-2. follow the structure
+Names your project, can rename MyProject to anything
+
+```
+project(MyProject)
+```
+
+Tells CMake to use C++17
+
+```
+set(CMAKE_CXX_STANDARD 17)
+```
+
+Do not downgrade C++17 when compiler fails
+
+```
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+```
+
+create an executable named program using these source files
+
+```
+add_executable(program
+src/main.cpp
+src/math_utils.cpp
+)
+```
+
+When compiling program, also look inside the include/ folder for header files
+
+```
+target_include_directories(program PRIVATE include)
+```
+
+2. follow the structure or cmake will fail
 3. build the project
 
 ```
+
 mkdir build
 cd build
 cmake ..
 make
+
 ```
 
-In case there is error during the build, you can remove the build folder  
+In case there is error during the build, you can remove the build folder
 and start over the step
 
 ```
+
 // on root directory
 rm -rf build
 
@@ -62,6 +92,7 @@ rm -rf build
 4. run the program
 
 ```
+
 // if inside the build/
 ./program
 // result
@@ -73,29 +104,38 @@ multiply: 15
 // result
 add: 8
 multiply: 15
+
 ```
 
 ## Version
 
 ```
+
 cmake --version
 Command 'cmake' not found, but can be installed with:
-sudo snap install cmake  # version 4.2.0, or
-sudo apt  install cmake  # version 3.27.8-1build1                                    tutorial/CMake$ cmake --version
+sudo snap install cmake # version 4.2.0, or
+sudo apt install cmake # version 3.27.8-1build1 tutorial/CMake$ cmake --version
 See 'snap info cmake' for additional versions.
+
 ```
 
 I chose 3.27.8 since the latest version is still on testing phase
 
 ```
+
 sudo snap install cmake
 [sudo] password for user: // enter password
+
 ```
 
 **Key Considerations**:
-**CMake 4.2.0 (Latest)**: Offers improvements like the FASTBuild generator,  
-better ExternalProject environment handling, and new cmake_language(TRACE)  
+**CMake 4.2.0 (Latest)**: Offers improvements like the FASTBuild generator,
+better ExternalProject environment handling, and new cmake_language(TRACE)
 capabilities. It is generally better for current development.
 
 **CMake 3.27.8 (Older)**: Supports older, deprecated features (like exec_program) that were removed in 4.0. It is suitable for projects that have not updated their CMake policies.
 Compatibility: CMake is backward compatible, but 4.x has officially dropped support for policies older than 3.5, which may cause errors in very old projects.
+
+```
+
+```
