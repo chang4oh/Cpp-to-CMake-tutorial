@@ -27,7 +27,7 @@ I am using GCC 13.3.0 uses the C++17 standard, CMake 3.27.8, VSCode
 this is what is used to compile and link executable
 
 ```
-gcc hello.c -o hello
+g++ hello.c -o hello
 ```
 
 **CMake** - Reads CMakeLists.txt
