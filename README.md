@@ -1,7 +1,7 @@
-# GCC to CMake tutorial
+# Cpp to CMake tutorial
 
-Author: Chang Oh  
-Start Date: 2/19/26  
+Author: Chang Oh
+Start Date: 2/19/26
 Objective: To to learn and apply GCC, CMake, Make, Ninja
 
 ## Overview
@@ -23,7 +23,7 @@ I am using GCC 13.3.0 uses the C++17 standard, CMake 3.27.8, VSCode
 
 ## Terms
 
-**GCC** - refer to GNU Compiler Collection are set of open source compilers  
+**G++** - is part of GNU Compiler Collection (GCC) are set of open source compilers  
 this is what is used to compile and link executable
 
 ```
